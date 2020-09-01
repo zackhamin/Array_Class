@@ -16,6 +16,8 @@ public class Main {
         numbers.insert(70);
         numbers.insert(80);
         numbers.insert(90);
+        numbers.removeAt(4);
+        System.out.println(numbers.indexOf(40));
         numbers.print();
     }
 }
