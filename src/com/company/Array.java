@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Array {
 
     private int[] items;
@@ -42,12 +45,22 @@ public class Array {
             items[i] = items[i + 1];
 
         count --;
-
     }
 
     public void print() {
         for (int i = 0; i < count; i++) {
             System.out.println(items[i]);
         }
+    }
+
+     public void max() {
+         Arrays.sort(items);
+         int maxNumber = items[items.length -1];
+         System.out.println(maxNumber);
+    }
+
+    public void reverse() {
+       for(int i = items.length -1; i >=0; i--)
+        System.out.println(items[i]);
     }
 }
